@@ -1,5 +1,5 @@
 import express from "express";
-import { getQueries, createQuery } from "../controllers/faqController.js";
+import { getQueries, createQuery } from "../controller/faq.controller.js";
 
 const router = express.Router();
 
