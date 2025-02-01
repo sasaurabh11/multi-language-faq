@@ -23,6 +23,9 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
+//routes
+import queryRoutes from "./routes/faq.routes.js";
+app.use("/api/faqs", queryRoutes);
 
 connectDB()
 .then(() => {
